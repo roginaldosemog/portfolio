@@ -30,7 +30,8 @@
         background-position: center;
         background-size: cover;
         border-radius: 4px;
-        height: 400px;
+        min-height: 480px;
+        height: 100%;
 
         @include responsive-desktop {
           width: 100%;
@@ -79,7 +80,7 @@
         h3 {
           font-size: 1.8rem;
           font-weight: 300;
-          margin-bottom: $gap-2;
+          margin-bottom: $gap-4;
           color: $color-white;
         }
 
@@ -93,10 +94,11 @@
           font-size: 1.8rem;
           color: $color-gray;
           line-height: 160%;
-          margin: $gap-4 0px $gap-5 0px;
+          margin: 0px 0px $gap-2 0px;
         }
 
         nav {
+
           ul {
             display: flex;
             align-items: center;
@@ -111,6 +113,7 @@
               border: 2px solid $bg-border;
               border-radius: 6px;
               padding: $gap-2;
+              margin-top: $gap-2;
 
               @include responsive-desktop {
                 img {
